@@ -3,9 +3,9 @@ const HALF_LIFE_PERIOD = 5730;
 const LN2 = 0.693;
 
 module.exports = function dateSample(sampleActivity) {
-    if(arguments.length == 0   			      ||
-       sampleActivity === null 	          || 
-       sampleActivity == ""    		        || 
+    if(arguments.length == 0              ||
+       sampleActivity === null            || 
+       sampleActivity == ""               || 
        typeof(sampleActivity) != 'string' ||
        isNaN(parseFloat(sampleActivity))  ||
        parseFloat(sampleActivity) <= 0    || 
